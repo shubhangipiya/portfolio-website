@@ -1,0 +1,181 @@
+
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="../css/style.css">
+		<title>Contact</title>
+		<style>
+			
+			body{
+  
+  				background-image: url("img/ho.jpg.jfif.jpg");
+				image-rendering: pixelated;
+  				background-position: center;
+  				background-size: cover;
+  				height: 800px;
+  				 
+				
+	  		}
+	  		.container ul li a{
+	  			color: #f3c1f5;
+	  		}
+	  		.container ul li a:hover{
+	  			color: #fff;
+	  		}
+			
+			.contact-section{
+	
+	           
+	            padding: 70px 0;
+
+             }
+			.contact-section h1{
+				color: #39cce3;
+				font-size: 45px;
+				font-weight: bold; 
+			}
+			.border{
+				width:140px; 
+				height:5px;
+				background:#fff;
+				margin:40px auto; 
+			}
+			.contact-form{
+				max-width: 600px;
+				margin:auto;
+				padding: 0 10px;
+				overflow: hidden;
+			}
+			.contact-form-text{
+				display: block;
+				width: 100%;
+				box-sizing: border-box; 
+				margin: 16px 0;
+				border:0;
+				background:  #111;
+				padding: 20px 40px;
+				outline: none;
+				color: #fff;
+				transition: 0.5s;
+
+			}
+			.contact-form-text{
+				box-shadow: 0 0 10px 4px #39cce3;
+			}
+			textarea.contact-form-text{
+				resize: none;
+				height: 120px;
+
+			}
+			.contact-form-btn{
+				float: right;
+				border:0;
+				background:#39cce3;
+				color: #fff;
+				padding: 12px 50px;
+				border-radius: 20px;
+				cursor: pointer;
+				transition: 0.5s;
+			}
+			.contact-form-btn:hover{
+				background: #2980b9;
+
+			}
+			.main{
+				position: absolute;
+				top:0;
+				height: 100%;
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				&--hidden {
+					display: none;
+				}
+			}
+			
+			
+			.main p{
+				background-color: #fff;
+				padding: 2rem 4rem;
+				font-family: sans-serif;
+
+			}
+			.close span{
+				display: flex;
+				justify-content: flex-end;
+				position: absolute;
+				right:50%;
+
+				margin-right: 40%;
+				margin-top: 30%;
+				cursor: pointer;
+				color: #f54242;
+				font-size: 20px;
+			}
+
+
+			
+
+
+
+
+
+		</style>
+
+	</head>
+
+	<body> 
+		<div class="container">
+			
+					<ul>
+						<li><a href="../index.html">Home</a></li>
+						<li><a href="resume.html">Resume</a></li>
+						<li><a href="blog.html">Blog</a></li>
+						<li><a href="research.html">Research</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				
+			
+			
+		</div>
+		<div class="contact-section">
+			
+		<h1><center>Contact Us </h1>
+		<div class="border"></div>
+		<form  name="messageForm"class="contact-form" onsubmit="validateForm()">
+			<!-- <input type="email" name="mail" class="contact-form-text" placeholder="your email" required> -->
+			<input type="text" name="firstname" class="contact-form-text" placeholder="your name" >
+			<input type="email" name="email" class="contact-form-text" placeholder="your email" >
+			<input type="text" name="pho" class="contact-form-text" placeholder="your phone" >
+			<input type="text" name="add" class="contact-form-text" placeholder="your address">
+			
+			<input type="submit" class="contact-form-btn" value="send">
+			
+				
+		</form>
+
+		</div>
+<!-- 		<div class="main main--hidden">
+			<div class="close">
+				<span> X</span>
+			</div>
+		<p>Your form has been sent. Thank you!</p>
+		</div> -->
+		<script>
+			function validateForm() {
+				var fname = document.forms["messageForm"]["firstname"].value;
+				var mail = document.forms["messageForm"]["email"].value;
+				var phone = document.forms["messageForm"]["pho"].value;
+				var ad = document.forms["messageForm"]["add"].value;
+				if (fname == ""|| mail == "" || phone == "" || ad == ""){
+					alert("Empty fields found. Please fill the form.");
+				}
+				else {
+					alert("Thank you for the feedback.");
+				}
+			}
+		</script>
+
+	</body>
+</html>

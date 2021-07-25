@@ -1,0 +1,84 @@
+*{
+	
+}
+
+body{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../oyo.jpg);
+	height: 130vh;
+	background-size: cover;
+	background-position: center;
+	margin: 0;
+	padding: 0;
+	font-family: Script;
+	 
+}
+ul{
+	float: right;
+	list-style-type: none;
+	margin-top: 25px;
+
+}
+ul li{
+	display: inline-block;
+}
+ul li a{
+	text-decoration: none;
+	color:#f3c1f5 ;
+	padding: 7px 10px;
+	border:1px solid transparent;
+	font-style: 900;
+
+
+}
+ul li a:hover{
+	background-color: #000;
+	color :#fff;
+
+}
+ul li.active a{
+	background-color: #000;
+	color: #fff;
+
+}
+.main{
+	max-width:1600px;
+	margin: auto;
+}
+
+.title{
+	position: absolute;
+	/*margin*/
+	height: 500px;
+	width: 700px;
+	/*top: 50%;*/
+	/*left: 50%;*/
+	/*transform: translate(-50%-50%);*/
+	text-align: center;
+	margin-top: 150px;
+	margin-left: 350px;
+}
+.title h1{
+	color: #fff;
+	font-size:55px;
+	font-family: verdana ;
+	/*text-align: center;*/
+}
+.title p{
+	color:#fff;
+	font-family: script;
+	font-size: 30px;
+	padding: 20px 0;
+	/*text-align: center;*/
+}
+.title button{
+	font-size: 20px;
+	text-transform: uppercase; 
+	background:linear-gradient(57deg, #d6c9c9, #948888);
+	padding: 15px 15px;
+	border:transparent;
+
+}
+.title button:hover{
+	background:linear-gradient(57deg,  #948888,#d6c9c9);
+	
+}
